@@ -1,26 +1,25 @@
 # 오큰수
 # 1. 나의 원래 풀이였던 것
 # que를 선언 맨 앞의 것을 pop하면서 확인
-# from collections import deque
-# import sys
+from collections import deque
+import sys
 
-# n = int(sys.stdin.readline())
-# que = deque(map(int, sys.stdin.readline().split()))
-# # print(que)
-# result = []
-# for i in range(n):
-#     target = que.popleft()
-#     for next in que:
-#         if target < next:
-#             result.append(next)
-#             break
+n = int(sys.stdin.readline())
+que = deque(map(int, sys.stdin.readline().split()))
+# print(que)
+result = []
+for i in range(n):
+    target = que.popleft()
+    for next in que:
+        if target < next:
+            result.append(next)
+            break       
+    else:
+        result.append(-1)
         
-#     else:
-#         result.append(-1)
-        
-# print(*result, end = '')
+print(*result)
 
-# 2. 구글링해서 얻은 답변
+# # 2. 구글링해서 얻은 답변
 import sys
 input = sys.stdin.readline
 

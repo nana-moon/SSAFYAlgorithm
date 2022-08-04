@@ -1,7 +1,7 @@
 # 프린터 큐
 from collections import deque
 import sys
-# sr = 
+
 N = int(input())
 for _ in range(N):
     ea, idx = map(int, sys.stdin.readline().split())
@@ -11,7 +11,7 @@ for _ in range(N):
     que = deque()
     for tu in enumerate(li):
         que.append(tu)
-    #print(que)
+    # print(que)
     
     # 몇 번째로 출력되는지를 count에 담음 
     count = 0
@@ -19,7 +19,7 @@ for _ in range(N):
     # que가 존재할 때 게속 반복, que는 for문 요소 반복이 안되더라고 
     while que:
         # 큐에서 최댓값 찾기
-        maximum = max(que, key = lambda x:x[1])
+        maximum = max(que, key = lambda x: x[1])
         
         # 맨 앞의 값을 pop
         target = que.popleft()
