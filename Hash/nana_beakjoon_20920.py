@@ -19,4 +19,3 @@ new_list = sorted(word_list.items(), key=lambda x : (-x[1], -len(x[0]), x[0]))
 # print(new_list)
 for i in new_list:
     print(i[0])
-# print(*new_list[0], sep='\n')
