@@ -17,8 +17,8 @@ N = int(input())
 arr = [list(input()) for _ in range(N)]
 
 visited = [[False]*N for _ in range(N)]
-num = 0
-cnt_lst = []
+num = 0 # 단지의 수
+cnt_lst = [] # 단지의 개수 담는 리스트
 dy = [0,0,1,-1]
 dx = [1,-1,0,0]
 
