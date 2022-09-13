@@ -5,7 +5,6 @@ from collections import deque
 
 input = sys.stdin.readline
 
-
 def check(y, x, lst):
     global cnt 
     que = deque()
@@ -34,12 +33,6 @@ for i in range(N):
     for j in range(N):
         if arr[i][j] == 'G':
             n_arr[i][j] = 'R'
-# n_arr = [
-# ['A', 'A', 'R', 'B', 'B'], 
-# ['R', 'R', 'R', 'B', 'B'],
-# ['B', 'B', 'B', 'R', 'R'], 
-# ['B', 'B', 'R', 'R', 'R'], 
-# ['R', 'R', 'R', 'R', 'R']]
         
 cnt = 1
 dy = [0,0,1,-1]

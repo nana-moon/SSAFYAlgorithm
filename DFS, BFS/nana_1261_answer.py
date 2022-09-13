@@ -30,3 +30,4 @@ while que:
             else:
                 arr[ny][nx] = arr[y][x] + 1
                 que.append([ny,nx])
+    print(arr)

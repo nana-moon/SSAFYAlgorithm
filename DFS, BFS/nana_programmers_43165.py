@@ -2,7 +2,7 @@
 def solution(numbers, target):
     answer = 0
     length = len(numbers)
-    stack = [[0,0]]
+    stack = [[0,0]] # sum, idx
     visited = [False]*length
     
     while stack:
@@ -15,7 +15,7 @@ def solution(numbers, target):
             stack.append([sum + numbers[idx], idx+1])
             stack.append([sum - numbers[idx], idx+1])
 
-    return answer
+    return answer 
 
 numbers = list(map(int, input().split()))
 target = int(input())
