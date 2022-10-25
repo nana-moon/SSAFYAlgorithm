@@ -1,7 +1,6 @@
 # 스타트와 링크
 import sys
 input = sys.stdin.readline
-# sys.setrecursionlimit(100000)
 
 N = int(input()) # idx 0 ~ N-1
 map = [list(map(int, input().split())) for _ in range(N)]

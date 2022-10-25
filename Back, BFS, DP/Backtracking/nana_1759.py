@@ -1,4 +1,4 @@
-# 암호 만들기
+# 암호 만들기(DFS)
 import sys
 input = sys.stdin.readline
 
