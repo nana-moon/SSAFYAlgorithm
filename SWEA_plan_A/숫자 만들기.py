@@ -36,6 +36,7 @@ for tc in range(1, int(input())+1):
     for i in range(4):
         for _ in range(tmp[i]):
             oper.append(i)
+
     num = list(map(int, input().split()))
     
     used = set()
