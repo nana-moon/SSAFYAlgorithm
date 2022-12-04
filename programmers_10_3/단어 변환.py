@@ -1,5 +1,3 @@
-
-            
 def solution(begin, target, words):
     answer = 0
     N = len(begin)
